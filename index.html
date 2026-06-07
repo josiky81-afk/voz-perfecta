@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Voz Perfecta">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <title>Voz Perfecta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ── HOME ── -->
+  <div id="home-screen" class="screen active">
+    <div class="page-header">
+      <h1>Voz Perfecta</h1>
+      <p>Habla con claridad y distinción</p>
+    </div>
+
+    <!-- Streak -->
+    <div class="streak-banner">
+      <div>
+        <div class="streak-num" id="streak-num">0</div>
+        <div class="streak-label">días de racha</div>
+      </div>
+      <div class="streak-flame">🔥</div>
+    </div>
+
+    <!-- Daily Progress -->
+    <div class="card" style="margin-bottom:16px">
+      <div class="card-row">
+        <div class="ring-wrap">
+          <svg width="64" height="64" viewBox="0 0 64 64">
+            <circle class="ring-bg" cx="32" cy="32" r="25"/>
+            <circle class="ring-fg" id="home-progress-ring" cx="32" cy="32" r="25" stroke-dasharray="157" stroke-dashoffset="157"/>
+          </svg>
+          <div class="ring-text" id="home-progress-pct">0%</div>
+        </div>
+        <div>
+          <div style="font-weight:600;font-size:16px">Progreso de hoy</div>
+          <div style="color:var(--text2);font-size:13px;margin-top:2px" id="home-done">0/6 categorías</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Next Exercise -->
+    <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text2);margin-bottom:8px">Continúa con</div>
+    <div class="card" id="next-exercise"></div>
+
+    <!-- Exam Tip -->
+    <div class="card" id="home-exam-tip"></div>
+
+    <!-- Quick Tips -->
+    <div style="font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:1px;color:var(--text2);margin:16px 0 8px">Consejo del día</div>
+    <div class="card">
+      <div style="font-size:15px;line-height:1.6">
+        💡 Antes de hablar en público, haz 3 respiraciones profundas. Tu voz sonará más segura y controlada desde la primera palabra.
+      </div>
+    </div>
+  </div>
+
+  <!-- ── EXERCISES ── -->
+  <div id="exercises-screen" class="screen">
+    <div class="page-header">
+      <h1>Ejercicios</h1>
+      <p>6 categorías · Práctica diaria</p>
+    </div>
+    <div class="cat-grid" id="cat-grid"></div>
+  </div>
+
+  <!-- ── EXERCISE DETAIL ── -->
+  <div id="exercise-screen" class="screen">
+    <div class="ex-header">
+      <button class="ex-back" onclick="navigate('exercises')">‹ Ejercicios</button>
+      <div class="ex-title" id="ex-title"></div>
+      <div class="ex-subtitle" id="ex-subtitle"></div>
+      <div class="step-indicator" id="step-dots"></div>
+    </div>
+    <div id="exercise-body"></div>
+  </div>
+
+  <!-- ── VOCABULARY ── -->
+  <div id="vocab-screen" class="screen">
+    <div class="page-header">
+      <h1>Vocabulario</h1>
+      <p>30 palabras de lenguaje culto</p>
+    </div>
+    <div id="vocab-body"></div>
+  </div>
+
+  <!-- ── EXAM ── -->
+  <div id="exam-screen" class="screen">
+    <div class="page-header">
+      <h1>Examen</h1>
+      <p>Pon a prueba tu conocimiento</p>
+    </div>
+    <div id="exam-body"></div>
+  </div>
+
+  <!-- ── PROGRESS ── -->
+  <div id="progress-screen" class="screen">
+    <div class="page-header">
+      <h1>Progreso</h1>
+      <p>Tu evolución</p>
+    </div>
+    <div id="progress-body"></div>
+  </div>
+
+  <!-- ── BOTTOM NAV ── -->
+  <nav id="nav">
+    <button class="nav-btn active" data-nav="home" onclick="navigate('home')">
+      <span class="nav-icon">🏠</span>
+      Inicio
+    </button>
+    <button class="nav-btn" data-nav="exercises" onclick="navigate('exercises')">
+      <span class="nav-icon">🎙️</span>
+      Ejercicios
+    </button>
+    <button class="nav-btn" data-nav="vocab" onclick="navigate('vocab')">
+      <span class="nav-icon">📚</span>
+      Vocabulario
+    </button>
+    <button class="nav-btn" data-nav="exam" onclick="navigate('exam')">
+      <span class="nav-icon">📝</span>
+      Examen
+    </button>
+    <button class="nav-btn" data-nav="progress" onclick="navigate('progress')">
+      <span class="nav-icon">📊</span>
+      Progreso
+    </button>
+  </nav>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
