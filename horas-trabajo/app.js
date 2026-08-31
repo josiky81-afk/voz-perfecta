@@ -136,10 +136,12 @@ function stepHours(delta) {
   let v = parseFloat(input.value) || 0;
   v = Math.min(24, Math.max(0, v + delta));
   input.value = Number.isInteger(v) ? v : v.toFixed(2).replace(/0$/, '').replace(/\.$/, '');
+  document.activeElement.blur();
 }
 
 function setHours(h) {
   document.getElementById('input-hours').value = h;
+  document.activeElement.blur();
 }
 
 function saveEntry() {
