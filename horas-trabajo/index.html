@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Control de Horas">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <title>Control de Horas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- ── HOY ── -->
+  <div id="hoy-screen" class="screen active">
+    <div class="page-header">
+      <h1>Control de Horas</h1>
+      <p>Registra tu jornada día a día</p>
+    </div>
+
+    <div class="card" id="today-status"></div>
+
+    <div class="card">
+      <div class="field-label">Fecha</div>
+      <input type="date" id="input-date" class="input">
+
+      <div class="field-label" style="margin-top:14px">Horas trabajadas</div>
+      <div class="hours-row">
+        <button class="hstep" onclick="stepHours(-0.5)">−</button>
+        <input type="number" id="input-hours" class="input hours-input" step="0.25" min="0" max="24" placeholder="0">
+        <button class="hstep" onclick="stepHours(0.5)">+</button>
+      </div>
+
+      <div class="chip-row" id="preset-chips"></div>
+
+      <div class="field-label" style="margin-top:14px">Nota (opcional)</div>
+      <textarea id="input-note" class="input" rows="2" placeholder="Ej: turno de tarde, cliente X…"></textarea>
+
+      <button class="btn btn-primary" style="margin-top:16px" onclick="saveEntry()">💾 Guardar día</button>
+      <button class="btn btn-secondary" style="margin-top:10px;display:none" id="cancel-edit-btn" onclick="resetForm()">Cancelar edición</button>
+    </div>
+  </div>
+
+  <!-- ── HISTORIAL ── -->
+  <div id="historial-screen" class="screen">
+    <div class="page-header">
+      <h1>Historial</h1>
+      <p>Todos tus días registrados</p>
+    </div>
+    <div id="historial-body"></div>
+  </div>
+
+  <!-- ── RESUMEN ── -->
+  <div id="resumen-screen" class="screen">
+    <div class="page-header">
+      <h1>Resumen</h1>
+      <p>Tus totales de un vistazo</p>
+    </div>
+    <div id="resumen-body"></div>
+  </div>
+
+  <!-- ── BOTTOM NAV ── -->
+  <nav id="nav">
+    <button class="nav-btn active" data-nav="hoy" onclick="navigate('hoy')">
+      <span class="nav-icon">📅</span>
+      Hoy
+    </button>
+    <button class="nav-btn" data-nav="historial" onclick="navigate('historial')">
+      <span class="nav-icon">📋</span>
+      Historial
+    </button>
+    <button class="nav-btn" data-nav="resumen" onclick="navigate('resumen')">
+      <span class="nav-icon">📊</span>
+      Resumen
+    </button>
+  </nav>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
