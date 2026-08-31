@@ -43,11 +43,20 @@ function getMonday(date) {
 const STORAGE_KEY = 'horasTrabajoData';
 
 function loadData() {
-  return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+  try {
+    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+  } catch (e) {
+    return {};
+  }
 }
 
 function saveData(d) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(d));
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(d));
+  } catch (e) {
+    alert('No se ha podido guardar.\n\nEs probable que tu navegador esté bloqueando el almacenamiento de esta página. En iPhone: Ajustes → Safari → Privacidad y seguridad → desactiva "Bloquear todas las cookies", y en modo incógnito/privado desactívalo también para este sitio.');
+    throw e;
+  }
 }
 
 function getData() {
