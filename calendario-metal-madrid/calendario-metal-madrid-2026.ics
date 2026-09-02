@@ -1,0 +1,134 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Control de Horas//Calendario Laboral Metal Madrid 2026//ES
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Festivos Metal Madrid 2026
+X-WR-TIMEZONE:Europe/Madrid
+BEGIN:VEVENT
+UID:2026-01-01-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20260101
+DTEND;VALUE=DATE:20260102
+SUMMARY:Festivo: Año Nuevo
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-01-06-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20260106
+DTEND;VALUE=DATE:20260107
+SUMMARY:Festivo: Epifanía del Señor (Reyes)
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-04-02-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20260402
+DTEND;VALUE=DATE:20260403
+SUMMARY:Festivo: Jueves Santo
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-04-03-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20260403
+DTEND;VALUE=DATE:20260404
+SUMMARY:Festivo: Viernes Santo
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-05-01-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260502
+SUMMARY:Festivo: Fiesta del Trabajo
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-05-02-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20260502
+DTEND;VALUE=DATE:20260503
+SUMMARY:Festivo: Fiesta de la Comunidad de Madrid
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-05-15-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20260515
+DTEND;VALUE=DATE:20260516
+SUMMARY:Festivo local: San Isidro (Madrid capital)
+DESCRIPTION:Festivo local del municipio de Madrid capital 2026. Si trabajas en otro municipio de la Comunidad de Madrid, sus 2 festivos locales pueden ser distintos.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-08-15-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20260815
+DTEND;VALUE=DATE:20260816
+SUMMARY:Festivo: Asunción de la Virgen
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-12-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:Festivo: Fiesta Nacional de España
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-02-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20261102
+DTEND;VALUE=DATE:20261103
+SUMMARY:Festivo: Todos los Santos (traslado)
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal. El 1 de noviembre cae en domingo y se traslada al lunes 2.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-11-09-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20261109
+DTEND;VALUE=DATE:20261110
+SUMMARY:Festivo local: Virgen de la Almudena (Madrid capital)
+DESCRIPTION:Festivo local del municipio de Madrid capital 2026. Si trabajas en otro municipio de la Comunidad de Madrid, sus 2 festivos locales pueden ser distintos.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-07-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Festivo: Día de la Constitución (traslado)
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal. El 6 de diciembre cae en domingo y se traslada al lunes 7.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-08-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20261208
+DTEND;VALUE=DATE:20261209
+SUMMARY:Festivo: Inmaculada Concepción
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-12-25-festivo-metalmadrid@horas-trabajo
+DTSTAMP:20260902T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:Festivo: Navidad
+DESCRIPTION:Fiesta laboral Comunidad de Madrid 2026 (Decreto 75/2025 BOCM) - Convenio del Metal
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
